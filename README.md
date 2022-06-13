@@ -6,9 +6,7 @@
 > 마크 다운 작성 참고 : [https://github.com/tchapi/markdown-cheatsheet](https://github.com/tchapi/markdown-cheatsheet)   
 
 > `제목 : #, ##, ###`   
-
 > `링크 걸기 : [연결할 이름](http://연결할 곳의 주소/)`  
-
 > `머릿말 표기 : - `
 
 
