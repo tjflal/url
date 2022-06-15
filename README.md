@@ -12,5 +12,5 @@
 
 
 ## url
-- 김미리 : https://github.com/kimmiri1234
-- ??? :  []()
+- 김미리 : https://https://github.com/tjflal
+- 서리미 :  https://github.com/tjflal/grid-css
