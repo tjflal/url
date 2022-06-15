@@ -12,5 +12,5 @@
 
 
 ## url
+- 강준모 : https://github.com/Junmovo/practice 
 - 허다영 : https://github.com/zeroall-h
-- 허다영1 :  https://github.com/zeroall-h/url
