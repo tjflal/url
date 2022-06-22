@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드 플렉스 레이아웃 연습</title>
+    <style>
+        body{
+            margin: 0; width:1920px;
+        }
+        header{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            padding: 1px;
+            display: flex;
+           
+        } 
+        header>p{
+            padding-right: 25px;
+            padding-left: 5px;
+        }
+        nav{
+            float: left;
+            width: 200px;
+            height: 90vh;
+            color: white;
+            background-color: rgb(4, 5, 44);
+            /* position: fixed; */
+            top: 0;
+            
+            
+        }
+        nav>h2{
+            font-size: 3rem;
+            margin: 0;
+            width: 60px;
+            padding-left: 10px;
+            float: left;
+        }
+        nav>p{
+            float: left;
+            padding-right: 10px;
+            font-size: xx-small;
+            padding-top: 10px;
+        }
+        nav>ul{
+            clear: both;
+            padding-top: 150px;
+            font-size: 1.3rem;
+            list-style: none;
+        }
+        nav li{
+            border-bottom: 1px solid #fff;
+            padding : 5px;
+            padding-left: 30px;
+            position: relative;
+        }
+        nav li img{
+            width: 23px;
+            padding-right: 8px;
+            position: absolute;
+            left: 0; top: 10px;
+
+        }
+        nav .lim{
+            padding-top: 300px;
+            padding-left:25px ;
+        }
+        nav .lim>p{
+            float: left;
+            padding-left: 20px;
+        }
+        nav .lim>p:last-child{
+            padding-left: 5px;
+        }
+        .imgbox img{
+            width: 33px;
+            padding-left: 2px;
+        }
+        .imgbox img:first-child{
+            padding-left: 45px;
+        }
+        main>img{
+            width: 800px;
+            height: 600px;
+            
+        }
+        .container1{
+            display: flex;
+        }
+       
+        .container1 .box1{
+            width: 800px;
+            height: 600px;
+            float: left;
+        }
+        .container1 .box1 .rimg1{
+            width: 800px;
+            height: 300px;
+        }
+        .container1 .box1 .rimg2{
+            width: 400px;
+            height: 300px;
+        }
+        .container1 .box1 .rimg3{
+            width: 390px;
+            height: 300px;
+        }
+        .container .box2{
+            display: flex;
+            width: 800px;
+            height: 600px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            float: left;
+            
+        }
+        .container .box2 *{
+            width: 400px; height: 300px;
+        }
+        .container .box3{
+            float: left;
+            display: flex;
+            width: 800px;
+            height: 600px;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .container .box3 *{
+            width: 400px; height: 300px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>EDIT</p>
+            <p>ENGLISH</p>
+        </header>
+        <nav>
+            <h2>B</h2> 
+            <p>brand<br>balance</p>
+            <p>brand<br>documentary<br>magazine</p>
+            <ul>
+                <li><img src="ico/home_FILL0_wght400_GRAD0_opsz48.svg" alt="">Home</li>
+                <li><img src="ico/feed_FILL0_wght400_GRAD0_opsz48.svg" alt="">News</li>
+                <li><img src="ico/help_FILL0_wght400_GRAD0_opsz48.svg" alt="">Bcast</li>
+                <li><img src="ico/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg" alt="">Shop</li>
+            </ul>
+            <div class="lim">
+                <p>about |</p>
+                <p>contact</p>
+                
+            </div>
+            <div class="imgbox">
+            <img src="ico/alternate_email_FILL0_wght400_GRAD0_opsz48.svg" alt=""><img src="ico/person_pin_circle_FILL0_wght400_GRAD0_opsz48.svg" alt=""><img src="ico/mail_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+            </div>  
+        </nav>
+        <div class="container1">
+            <main><img src="minaimg.jpg" alt="메인"></main>
+            <div class="box1">
+                <img src="긴img1.PNG" alt=""  class="rimg1">
+                <img src="정사img1.PNG" alt="" class="rimg2">
+                <img src="정사img2.PNG" alt="" class="rimg3">
+            </div>
+        </div>
+        <caption>
+            <div class="box2">
+                
+                <img src="정사img.PNG"  class="bimg1" alt="" >
+                <img src="긴img.png"   class="bimg2" alt="">
+                <img src="긴img3.PNG" class="bimg3" alt="">
+                <img src="정사img4.PNG" alt="" class="bimg4">
+            </div>
+            <div class="box3">
+                <img src="정사img5.PNG" class="bimg1" alt="">
+                <img src="정사img8.PNG" class="bimg2" alt="">
+                <img src="정사img7.PNG" class="bimg3" alt="">
+                <img src="정사img9.PNG"  class="bimg4" alt="">
+            </div>
+        </caption>
+    </div>
+</body>
+</html>
